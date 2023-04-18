@@ -1,0 +1,47 @@
+#root{
+   background-color: rgba(71, 42, 3, 0.315);
+}
+.wrapper{
+   width:400px;
+   height:500px;
+   background:black;
+   color: #fff;
+}
+.anotation{
+   color:#3e2e1e;
+   text-align: center;
+   margin-top:1rem;
+}
+.calculator{
+   height: 100%;
+   width: 100%;
+
+}
+.user-area{
+   height: 100%;
+   width: 100%;
+   display:grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-template-rows: repeat(6,12.98%);
+   gap:2px;
+}
+#display{
+   height:20%;
+   padding: 15px;
+   font-size: 1.6rem;
+   display:flex;
+   flex-direction: column;
+
+}
+.display-exp{
+   flex:0 0 40%;
+}
+.display-change{
+   flex:0 0 60%;
+}
+#clear,#zero{
+   grid-column-start:span 2;
+}
+#equal{
+   grid-row-start: span 2;
+}
